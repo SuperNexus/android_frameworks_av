@@ -3044,7 +3044,7 @@ AudioFlinger::PlaybackThread::mixer_state AudioFlinger::MixerThread::prepareTrac
                     size_t audioHALFrames =
                             (mOutput->stream->get_latency(mOutput->stream)*mSampleRate) / 1000;
                     size_t framesWritten = mBytesWritten / mFrameSize;
-                    if (!(mStandby || track->presentationComplete(framesWritten, audioHALFrames))) {
+                    if (!(mStandby || track->presentationComplete(framesWritten, audioHALFrames) ||
                         // track stays in active list until presentation is complete
                         break;
                     }
