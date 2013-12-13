@@ -1823,6 +1823,7 @@ AudioFlinger::RecordThread::RecordTrack::RecordTrack(
             audio_format_t format,
             audio_channel_mask_t channelMask,
             size_t frameCount,
+<<<<<<< HEAD
 #ifdef QCOM_HARDWARE
             uint32_t flags,
 #endif
