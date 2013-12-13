@@ -1824,6 +1824,9 @@ AudioFlinger::RecordThread::RecordTrack::RecordTrack(
             audio_channel_mask_t channelMask,
             size_t frameCount,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> CM/cm-11.0
 #ifdef QCOM_HARDWARE
             uint32_t flags,
 #endif
